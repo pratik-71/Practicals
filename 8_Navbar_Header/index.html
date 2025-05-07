@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* Header */
+        .header {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /* Main container */
+        .container {
+            display: flex;
+            height: 90vh;
+        }
+        /* Navigation */
+        .nav {
+            width: 25%;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .nav ul {
+            list-style-type: none;
+        }
+        .nav ul li {
+            margin-bottom: 10px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .nav ul li a:hover {
+            background-color: #bbb;
+        }
+        /* Content */
+        .content {
+            width: 75%;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">Welcome to My Website</div>
+    <!-- Main Section -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <h2>Main Content Area</h2>
+            <p>This is the content section.</p>
+        </div>
+    </div>
+</body>
+</html>

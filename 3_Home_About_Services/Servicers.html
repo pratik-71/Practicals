@@ -3,90 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
+    <title>Our Services - CSMU</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: aqua;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        nav a {
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #34495e;
         }
         h1 {
             text-align: center;
-            color: #333;
-            margin-top: 50px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
         }
-
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-top: 20px;
+        .main-image {
             width: 65%;
-            height: 65%;
+            max-width: 800px;
+            height: 300px;
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
         }
         p {
             text-align: center;
-            color: #333;
-            margin-top: 20px;
+            max-width: 800px;
+            margin: 0 auto 40px;
             padding: 0 20px;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
-        .container {
+        .services-container {
             display: flex;
             justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .service-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
             align-items: center;
-            margin-top: 20px;
-            border-radius: 50%;
-            justify-content: space-between;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
         }
-        .img1 {
-            width: 30%;
-            height: 30%;
-            border-radius: 50%;
-            margin: 0 10px;
-            justify-content: space-between;
+        .web-dev {
+            background: linear-gradient(135deg, #3498db, #2980b9);
         }
-        .img2 {
-            width: 30%;
-            height: 30%;
-            border-radius: 50%;
-            margin: 0 10px;
+        .cloud {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
         }
-        .img3 {
-            width: 30%;
-            height: 30%;
-            border-radius: 50%;
-            margin: 0 10px;
+        .software {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
         }
         h3 {
-            text-align: center;
-            color: #333;
-            margin-top: 20px;
+            color: #2c3e50;
             font-size: 1.5rem;
-            font-weight: 500;
+            margin: 15px 0;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Servicers.html">Services</a>
+    </nav>
     <h1>Our Services</h1>
-    <img src="guru.jpeg" alt="Services Image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Placeat blanditiis minus id <br>Incidunt, veniam? Amet
-        suscipit earum praesentium numquam provident sit illo corporis dolore aut quibusdam? Laboriosam <br>corporis
+    <div class="main-image">CSMU Services</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis minus id. Incidunt, veniam? Amet
+        suscipit earum praesentium numquam provident sit illo corporis dolore aut quibusdam? Laboriosam corporis
         iste porro tenetur consectetur eius delectus voluptatem itaque illum minima officia reiciendis distinctio
-        dolorum <br>amet odit deleniti rem exercitationem architecto labore sint. Quis commodi ad illo atque laborum</p>
-    <div class="container">
-        <div class="img1">
-            <img src="web.webp">
-            <h3>Web Developer</h3>
+        dolorum amet odit deleniti rem exercitationem architecto labore sint.</p>
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-image web-dev">Web Development</div>
+            <h3>Web Development</h3>
         </div>
-        <div class="img2">
-            <img src="cloud.jpg">
+        <div class="service-card">
+            <div class="service-image cloud">Cloud Solutions</div>
             <h3>Cloud Solutions</h3>
         </div>
-        <div class="img3">
-            <img src="software.webp">
-            <h3>Software Developer</h3>
+        <div class="service-card">
+            <div class="service-image software">Software Development</div>
+            <h3>Software Development</h3>
         </div>
+    </div>
 </body>
 </html>
